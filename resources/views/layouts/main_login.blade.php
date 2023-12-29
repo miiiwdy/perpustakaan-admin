@@ -43,7 +43,7 @@
     <div class="row">
       <div class="col-12">
         <!-- Navbar -->
-        @include('partials.login.navbar')
+        {{-- @include('partials.login.navbar') --}}
         <!-- End Navbar -->
       </div>
     </div>
@@ -52,7 +52,7 @@
     @yield('login_content')
   </main>
   <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-  @include('partials.login.footer')
+  {{-- @include('partials.login.footer') --}}
   <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>

@@ -30,16 +30,16 @@
                           @foreach ($bukus as $buku)
                           <tr>
                             <td>
-                                <p class="text-xs text-secondary mb-0">{{ $buku->judul }}</p>
+                                <p class="text-xs text-secondary mb-0 ps-3">{{ $buku->judul }}</p>
                             </td>
                               <td>
-                                <p class="text-xs text-secondary mb-0">{{ $buku->penerbit }}</p>
+                                <p class="text-xs text-secondary mb-0 ps-3">{{ $buku->penerbit }}</p>
                             </td>
                             <td>
-                                <p class="text-xs text-secondary mb-0">{{ $buku->pengarang }}</p>
+                                <p class="text-xs text-secondary mb-0 ps-3">{{ $buku->pengarang }}</p>
                             </td>
                             <td>
-                                <p class="text-xs text-secondary mb-0">{{ $buku->stok_buku }}</p>
+                                <p class="text-xs text-secondary mb-0 ps-3">{{ $buku->stok_buku }}</p>
                               </td>
                             <td class="d-flex">
                                 <form action="{{ route("buku.delete", $buku->id) }}" method="POST">

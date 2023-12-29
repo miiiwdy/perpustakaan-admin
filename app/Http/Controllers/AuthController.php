@@ -57,17 +57,5 @@ class AuthController extends Controller
         return redirect()->route('login');
     }
 
-    public function logout(Request $request)
-    {
-        if (Auth::check()) {
-            Auth::logout();
-        } elseif (Auth::guard('siswa')->check()) {
-            Auth::guard('siswa')->logout();
-        }
-
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
-
-        return redirect()->route('login');
-    }
+   
 }
