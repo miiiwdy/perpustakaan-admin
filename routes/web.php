@@ -35,7 +35,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout_user');
 
 Route::prefix('admin')->middleware('auth')->group(function (){
     Route::get('/dashboard', [LibraryController::class, 'index_admin'])->name('dashboard_admin');
-    Route::get('/akun', [LibraryController::class, 'index_akun'])->name('akun_admin');
+    Route::get('/akun', [LibraryController::class, 'index_akun'])->name('dashboard_akun');
     Route::delete('/buku/{id}', [LibraryController::class, 'delete_buku'])->name('buku.delete');
     Route::post('/buku', [LibraryController::class, 'create_buku'])->name('buku.create');
     Route::put('/buku/{id}', [LibraryController::class, 'edit_buku'])->name('buku.edit');

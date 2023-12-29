@@ -5,7 +5,7 @@
         <div class="container-fluid py-4">
             <!-- Button trigger modal -->
             <button type="button" class="btn bg-gradient-primary" data-bs-toggle="modal" data-bs-target="#createBuku">
-                Tambah Buku
+                Tambah siswa
             </button>
             @include('partials.buku.create_buku')
             <div class="row">

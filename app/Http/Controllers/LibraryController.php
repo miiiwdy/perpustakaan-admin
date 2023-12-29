@@ -17,6 +17,11 @@ class LibraryController extends Controller
         return view('index_siswa');
     }
 
+    public function index_akun (){
+        $bukus = Buku::all();
+        return view('index_akun', compact("bukus"));
+    }
+
     public function login () {
         return view('login');
     }
