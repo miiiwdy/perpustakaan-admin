@@ -16,10 +16,10 @@ class AdminSeeder extends Seeder
     {
         $data = [ 
             [ 
-                'name' => 'Aila', 
+                'name' => 'asep', 
                 'role_status' => 'admin', 
-                'email' => 'Aila@gmail.com', 
-                'password' => Hash::make('aila1234'), 
+                'email' => 'asep@gmail.com', 
+                'password' => Hash::make('asep12345'), 
             ] 
         ]; 
  

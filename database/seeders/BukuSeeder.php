@@ -16,9 +16,9 @@ class BukuSeeder extends Seeder
         $data = [ 
             [ 
                 'judul' => 'Belajar Laravel', 
-                'penerbit' => 'SMKS Taruna Bhakti', 
+                'penerbit' => 'SMK Taruna Bhakti', 
                 'pengarang' => 'Bu Miranda', 
-                'stok_buku' => 5
+                'stok_buku' => 1337
             ]]; 
  
         foreach ($data as $val) { 

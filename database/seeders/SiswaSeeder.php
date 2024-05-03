@@ -9,21 +9,18 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class SiswaSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
     public function run(): void
     {
         $data = [ 
             [ 
-                'nama' => 'rara', 
+                'nama' => 'yono', 
                 'kelas' => 'XI PPLG 2', 
                 'role_status' => 'siswa', 
-                'email' => 'rara@gmail.com', 
-                'password' => Hash::make('12345678'), 
+                'email' => 'yono@gmail.com', 
+                'password' => Hash::make('yono12345 '), 
             ] 
         ]; 
-        foreach ($data as $val) { 
+        foreach ($data as $val) {
             Siswa::insert([ 
                 'nama' => $val['nama'], 
                 'kelas' => $val['kelas'], 
